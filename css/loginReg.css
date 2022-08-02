@@ -21,12 +21,14 @@
 
 .btn-color-theme {
   background-color: #385b64;
-  color: white;
+  color: white !important;
+  border-color: #385b64;
 }
 
 .btn-color-theme:hover {
-  background-color: #385b64;
+  background-color: #606c38;
   color: white;
+  border-color: #606c38;
 }
 
 #display-pass {

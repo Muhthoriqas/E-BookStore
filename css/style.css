@@ -321,6 +321,7 @@ section {
   font-size: 1.7rem;
   cursor: pointer;
   font-weight: 500;
+  text-align: center;
 }
 
 .about .row .btn:hover {
@@ -341,6 +342,7 @@ section {
   cursor: pointer;
   font-weight: 500;
 }
+
 .populer .box .btn:hover {
   background-color: var(--secondaryColor);
   color: black;
@@ -367,7 +369,7 @@ section {
 .heading span {
   font-size: 3rem;
   padding: 0.5rem 2rem;
-  color: var(--black);
+  color: #000;
   background: #fff;
   border: 1px solid var(--primaryColor);
   border-radius: 7px;
@@ -460,6 +462,133 @@ section {
   transform: scale(1.1);
 }
 
+/* Member Section */
+.member {
+  padding: 1rem 9% !important;
+}
+.member .container h1 {
+  font-size: 3em;
+  align-items: center;
+  text-align: center;
+}
+.member .container .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+.member .container .row .content span {
+  color: var(--primaryColor);
+}
+
+.member .container .row .box {
+  margin: 0.7rem 0;
+  padding: 1rem 1.2rem;
+  font-size: 1.6rem;
+  color: var(--black);
+  border-radius: 0.5rem;
+  text-transform: none;
+  border: 1px solid var(--primaryColor);
+  text-transform: capitalize;
+}
+
+.member .row .image {
+  flex: 1 1 45rem;
+}
+
+.member .row .image img {
+  width: 100%;
+}
+
+.member .row .content {
+  flex: 1 1 45rem;
+}
+
+.member .row .content h3 {
+  color: var(--black);
+  font-size: 3.3rem;
+  padding: 0.5rem 0;
+}
+
+.member .row .content p {
+  color: var(--light-color);
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+  line-height: 2;
+}
+
+.member .row .content .icons-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  margin-top: 0.5rem;
+  color: var(--primaryColor);
+}
+
+.member .row .content .icons-container .icons:hover {
+  color: var(--secondaryColor);
+  transform: scale(0.9);
+}
+
+.member .row .content .icons-container .icons {
+  background: #eee;
+  border-radius: 0.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex: 1 1 17rem;
+  padding: 1.5rem 1rem;
+}
+
+.member .row .content .icons-container .icons i {
+  font-size: 2.5rem;
+  color: var(--green);
+}
+
+.member .row .content .icons-container .icons span {
+  font-size: 1.5rem;
+  color: var(--black);
+}
+
+.member .row .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  /* padding: 0.9rem 3rem; */
+  padding: 10px 20px;
+  border-radius: 0.5rem;
+  color: #fff;
+  background: var(--primaryColor);
+  font-size: 1.7rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.member .row .btn:hover {
+  background-color: var(--secondaryColor);
+  color: black;
+}
+
+.newsletter form {
+  max-width: 45rem;
+  margin-left: auto;
+  text-align: center;
+  padding: 5rem 0;
+  border: 1px solid var(--primaryColor);
+}
+
+.newsletter form .box {
+  width: 100%;
+  margin: 0.7rem 0;
+  padding: 1rem 1.2rem;
+  font-size: 1.6rem;
+  color: var(--black);
+  border-radius: 0.5rem;
+  text-transform: none;
+}
+
 /* Responsive */
 @media (max-width: 991px) {
   html {
@@ -513,6 +642,27 @@ section {
   }
   .about .row .content .btn {
     width: 100%;
+  }
+  .member .container .row .content h3 {
+    margin-top: 12px;
+    font-size: 3em;
+    align-items: center;
+    text-align: center;
+  }
+
+  .member .container .row .content .box {
+    width: 100%;
+  }
+  .member .container .row .content .row-btn {
+    display: flex;
+    text-align: center;
+  }
+
+  .member .container .row .content .btn {
+    text-align: center;
+    width: 49.6%;
+    /* display: inline-block;
+    width: 100%; */
   }
 }
 
