@@ -43,6 +43,10 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar-thumb {
   background: var(--black);
 }
+
+section {
+  padding: 5rem 9%;
+}
 .header .header-1 {
   background: #fff;
   padding: 1.5rem 9%;
@@ -94,6 +98,10 @@ html::-webkit-scrollbar-thumb {
 .header .header-1 .icons a {
   color: var(--primaryColor);
 }
+.header .header-1 .icons a:hover {
+  color: var(--primaryColor);
+  color: var(--secondaryColor);
+}
 .header .header-1 .icons a #login-btn {
   cursor: pointer;
 }
@@ -143,6 +151,71 @@ html::-webkit-scrollbar-thumb {
   background-color: var(--secondaryColor);
 }
 
+.home {
+  background: url(/img/banner-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.home .row .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  /* padding: 0.9rem 3rem; */
+  padding: 10px 20px;
+  border-radius: 0.5rem;
+  color: #fff;
+  background: var(--primaryColor);
+  font-size: 1.7rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+.home .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.home .row .content {
+  flex: 1 1 42rem;
+}
+
+.home .row .books-slider {
+  flex: 1 1 42rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.home .row .books-slider a img {
+  height: 25rem;
+}
+
+.home .row .books-slider a:hover img {
+  transform: scale(0.9);
+}
+
+.home .row .books-slider .stand {
+  width: 100%;
+  margin-top: -2rem;
+}
+
+.home .row .content h3 {
+  color: var(--black);
+  font-size: 4.5rem;
+}
+
+.home .row .content p {
+  color: var(--light-color);
+  font-size: 1.5rem;
+  line-height: 2;
+  padding: 1rem 0;
+}
+
+.home .row .content .btn:hover {
+  background-color: var(--secondaryColor);
+  color: black;
+}
+
 /* Responsive */
 @media (max-width: 991px) {
   html {
@@ -151,6 +224,9 @@ html::-webkit-scrollbar-thumb {
 
   .header .header-1 {
     padding: 2rem;
+  }
+  section {
+    padding: 3rem 2rem;
   }
 }
 
@@ -178,9 +254,16 @@ html::-webkit-scrollbar-thumb {
   .header .header-1 .search-form.active {
     top: 115%;
   }
+  .home .row .content {
+    text-align: center;
+  }
+
+  .home .row .content h3 {
+    font-size: 3.5rem;
+  }
 }
 
-@media (max-width: 150px) {
+@media (max-width: 450px) {
   html {
     font-size: 50%;
   }
