@@ -37,25 +37,29 @@ searchForm = document.querySelector(".search-form");
 document.querySelector("#search-btn").onclick = () => {
   searchForm.classList.toggle("active");
 };
-let navLinks = document.querySelectorAll("header .navbar a");
-let section = document.querySelectorAll("section");
+
+var navLinks = document.querySelectorAll("header .navbar a");
+var section = document.querySelectorAll("section");
+
 window.onscroll = () => {
   searchForm.classList.remove("active");
+
   section.forEach((sec) => {
-    let top = window.scrollY;
-    let height = sec.offsetHeight;
-    let offset = sec.offsetTop - 150;
-    let id = sec.getAttribute("id");
+    var top = window.scrollY;
+    var height = sec.offsetHeight;
+    var offset = sec.offsetTop - 150;
+    var id = sec.getAttribute("id");
 
     if (top >= offset && top < offset + height) {
       navLinks.forEach((links) => {
         links.classList.remove("active");
         document
-          .querySelector("header .navbar a[href*=" + id + "]")
+          .querySelector("header .navbar a[href *= " + id + "]")
           .classList.add("active");
       });
     }
   });
+
   if (window.scrollY > 80) {
     document.querySelector(".header .header-2").classList.add("active");
   } else {
@@ -75,7 +79,7 @@ var swiper = new Swiper(".books-slider", {
   loop: true,
   centeredSlides: true,
   autoplay: {
-    delay: 9500,
+    delay: 3000,
     disableOnInteraction: false,
   },
   breakpoints: {
@@ -91,22 +95,30 @@ var swiper = new Swiper(".books-slider", {
   },
 });
 
-// window.onscroll = () => {
-//   navbar.classList.remove("active");
-
-//   section.forEach((sec) => {
-//     let top = window.scrollY;
-//     let height = sec.offsetHeight;
-//     let offset = sec.offsetTop - 150;
-//     let id = sec.getAttribute("id");
-
-//     if (top >= offset && top < offset + height) {
-//       navLinks.forEach((links) => {
-//         links.classList.remove("active");
-//         document
-//           .querySelector("header .navbar a[href*=" + id + "]")
-//           .classList.add("active");
-//       });
-//     }
-//   });
-// };
+var swiper = new Swiper(".populer-slider", {
+  spaceBetween: 10,
+  loop: true,
+  centeredSlides: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    450: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+  },
+});
