@@ -37,10 +37,25 @@ searchForm = document.querySelector(".search-form");
 document.querySelector("#search-btn").onclick = () => {
   searchForm.classList.toggle("active");
 };
-
+let navLinks = document.querySelectorAll("header .navbar a");
+let section = document.querySelectorAll("section");
 window.onscroll = () => {
   searchForm.classList.remove("active");
+  section.forEach((sec) => {
+    let top = window.scrollY;
+    let height = sec.offsetHeight;
+    let offset = sec.offsetTop - 150;
+    let id = sec.getAttribute("id");
 
+    if (top >= offset && top < offset + height) {
+      navLinks.forEach((links) => {
+        links.classList.remove("active");
+        document
+          .querySelector("header .navbar a[href*=" + id + "]")
+          .classList.add("active");
+      });
+    }
+  });
   if (window.scrollY > 80) {
     document.querySelector(".header .header-2").classList.add("active");
   } else {
@@ -75,3 +90,23 @@ var swiper = new Swiper(".books-slider", {
     },
   },
 });
+
+// window.onscroll = () => {
+//   navbar.classList.remove("active");
+
+//   section.forEach((sec) => {
+//     let top = window.scrollY;
+//     let height = sec.offsetHeight;
+//     let offset = sec.offsetTop - 150;
+//     let id = sec.getAttribute("id");
+
+//     if (top >= offset && top < offset + height) {
+//       navLinks.forEach((links) => {
+//         links.classList.remove("active");
+//         document
+//           .querySelector("header .navbar a[href*=" + id + "]")
+//           .classList.add("active");
+//       });
+//     }
+//   });
+// };
