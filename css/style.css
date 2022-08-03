@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poppins:wght@200;300;400;500&display=swap");
 
-/* #385B64 */
-/* #1C2F36 */
-/* #FF745C */
-/* #B04333 */
-
 :root {
   --primaryColor: #606c38;
   --secondaryColor: #93987c;
@@ -99,7 +94,6 @@ section {
 }
 
 .header .header-1 .icons {
-  /* background-color: var(--black); */
   color: var(--black);
   font-size: 2.5rem;
 }
@@ -144,7 +138,6 @@ section {
   z-index: 10;
 }
 .header-2 .navbar a.active {
-  /* border: 2px solid var(--secondaryColor); */
   border-radius: 7px;
   background-color: #fff;
   color: var(--black);
@@ -180,7 +173,6 @@ section {
 .home .row .btn {
   margin-top: 1rem;
   display: inline-block;
-  /* padding: 0.9rem 3rem; */
   padding: 10px 20px;
   border-radius: 0.5rem;
   color: #fff;
@@ -314,7 +306,6 @@ section {
 .about .row .btn {
   margin-top: 1rem;
   display: inline-block;
-  /* padding: 0.9rem 3rem; */
   padding: 10px 20px;
   border-radius: 0.5rem;
   color: #fff;
@@ -334,7 +325,6 @@ section {
 .populer .box .btn {
   margin-top: 1rem;
   display: inline-block;
-  /* padding: 0.9rem 3rem; */
   padding: 10px 20px;
   border-radius: 0.5rem;
   color: #fff;
@@ -377,7 +367,6 @@ section {
 }
 
 .populer .populer-slider .box {
-  /* width: 25rem; */
   margin: 2rem 0;
   position: relative;
   overflow: hidden;
@@ -490,7 +479,6 @@ section {
   border-radius: 0.5rem;
   text-transform: none;
   border: 1px solid var(--primaryColor);
-  /* text-transform: capitalize; */
 }
 
 .member .row .image {
@@ -557,7 +545,6 @@ section {
 .member .row .btn {
   margin-top: 1rem;
   display: inline-block;
-  /* padding: 0.9rem 3rem; */
   padding: 10px 20px;
   border-radius: 0.5rem;
   color: #fff;
@@ -903,21 +890,22 @@ footer .left .content .social a {
 footer .left .content .social a span {
   height: 40px;
   width: 40px;
-  background: #fff;
+  background: var(--primaryColor);
   line-height: 40px;
   text-align: center;
   font-size: 20px;
   border-radius: 5px;
   transition: 0.3s;
-  color: #334;
+  color: #fff;
 }
 footer .left .content .social a span:hover {
-  background: var(--primaryColor);
-  color: #fff;
+  background: var(--secondaryColor);
+  color: #000;
+  transform: scale(1.1);
 }
 footer .center .content .fas {
   font-size: 20px;
-  background: #fff;
+  background: var(--primaryColor);
   height: 45px;
   width: 45px;
   line-height: 45px;
@@ -925,10 +913,11 @@ footer .center .content .fas {
   border-radius: 50%;
   transition: 0.3s;
   cursor: pointer;
+  color: #fff;
 }
 footer .center .content .fas:hover {
-  background: var(--primaryColor);
-  color: #fff;
+  background: var(--secondaryColor);
+  color: #000;
 }
 footer .center .content .text {
   font-size: 1.4rem;
@@ -982,7 +971,6 @@ footer .right form .btn button {
 }
 footer .right form .btn button:hover {
   background: #385b64;
-  color: black;
   border: 1px solid #000;
 }
 footer .bottom {
@@ -999,7 +987,7 @@ footer .bottom a {
   text-decoration: none;
 }
 footer .bottom a:hover {
-  text-decoration: underline;
+  zoom: 110%;
 }
 
 /* Loader Section */
