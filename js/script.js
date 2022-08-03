@@ -122,3 +122,45 @@ var swiper = new Swiper(".populer-slider", {
     },
   },
 });
+
+var swiper = new Swiper(".new-slider", {
+  spaceBetween: 10,
+  loop: true,
+  centeredSlides: true,
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+var swiper = new Swiper(".new-slider-2", {
+  spaceBetween: 10,
+  loop: true,
+  centeredSlides: true,
+  autoplay: {
+    delay: 6000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});

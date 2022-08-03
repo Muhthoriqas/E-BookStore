@@ -12,7 +12,7 @@
   --black: #444;
   --light-color: #666;
   --border: 0.1rem solid rgba(0, 0, 0, 0.1);
-  --border-hover: 0.1rem solid var(-- black);
+  --border-hover: 0.1rem solid var(--secondaryColor);
   --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 * {
@@ -571,24 +571,82 @@ section {
   color: black;
 }
 
-.newsletter form {
-  max-width: 45rem;
-  margin-left: auto;
-  text-align: center;
-  padding: 5rem 0;
-  border: 1px solid var(--primaryColor);
+/* New Books Section   */
+.new .new-slider .box {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  border: var(--border);
+  margin: 1rem 0;
+}
+.new .new-slider .box:hover {
+  border: var(--border-hover);
 }
 
-.newsletter form .box {
-  width: 100%;
-  margin: 0.7rem 0;
-  padding: 1rem 1.2rem;
-  font-size: 1.6rem;
+.new .new-slider .box .image img {
+  height: 15rem;
+}
+
+.new .new-slider .box .content h3 {
+  font-size: 2rem;
   color: var(--black);
-  border-radius: 0.5rem;
-  text-transform: none;
 }
 
+.new .new-slider .box .content .price {
+  font-size: 2.2rem;
+  color: var(--black);
+  padding-bottom: 0.5rem;
+}
+
+.new .new-slider .box .content .price span {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  text-decoration: line-through;
+}
+
+.new .new-slider .box .content .stars i {
+  font-size: 1.5rem;
+  color: var(--primaryColor);
+}
+
+.new .new-slider-2 .box {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  border: var(--border);
+  margin: 1rem 0;
+}
+.new .new-slider-2 .box:hover {
+  border: var(--border-hover);
+}
+
+.new .new-slider-2 .box .image img {
+  height: 15rem;
+}
+
+.new .new-slider-2 .box .content h3 {
+  font-size: 2rem;
+  color: var(--black);
+}
+
+.new .new-slider-2 .box .content .price {
+  font-size: 2.2rem;
+  color: var(--black);
+  padding-bottom: 0.5rem;
+}
+
+.new .new-slider-2 .box .content .price span {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  text-decoration: line-through;
+}
+
+.new .new-slider-2 .box .content .stars i {
+  font-size: 1.5rem;
+  color: var(--primaryColor);
+}
 /* Responsive */
 @media (max-width: 991px) {
   html {
