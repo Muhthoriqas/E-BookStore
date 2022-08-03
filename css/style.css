@@ -489,7 +489,7 @@ section {
   border-radius: 0.5rem;
   text-transform: none;
   border: 1px solid var(--primaryColor);
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 
 .member .row .image {
