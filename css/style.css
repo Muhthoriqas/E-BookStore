@@ -165,7 +165,7 @@ section {
 
 /* Home Section */
 .home {
-  background: url(/img/banner-bg.jpg);
+  background: url(../img/banner-bg.jpg);
   background-size: cover;
   background-position: center;
 }
